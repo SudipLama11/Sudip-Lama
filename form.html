@@ -1,0 +1,37 @@
+<html>
+<title>Making forms Example</title>
+<body>
+    <body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background-color: rgb(255, 255, 255);">
+    
+        <form action="/submit-data" method="POST">
+            <h2 style="text-align: center; width: 100%; margin: 0 0 10px 0; color: purple;">Registration Form</h2>
+            <div style="width: 350px; border: 2px solid #f70ad3; border-radius: 5px; padding: 0px; display: flex; flex-direction: column; gap: 40px; background-color: rgb(248, 243, 243);">
+            
+            <div style="margin-left: 20px; margin-top: 20px; margin-bottom: 20px; color: blueviolet;">
+                    <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Full Name" required /><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="abc@gmail.com" required /><br><br>
+           
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password"
+                    required /><br><br>
+            
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality"
+                    required /><br><br>
+        
+                <label for="gpa">GPA(+2):</label>
+                <input type="number" id="gpa" name="gpa" placeholder="Enter your GPA" required /><br><br>
+            
+            Your objective:
+        
+        <textarea name="comment" rows="4" cols="30"> Enter your objective here......</textarea><br><br>
+
+            <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </body>
+</html>
