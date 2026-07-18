@@ -1,0 +1,307 @@
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(128, 128, 255);
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.header {
+    padding: 40px;
+    text-align: center;
+    background: #000000;
+    color: white;
+    font-size: 30px;
+}
+
+.header p {
+    color: aliceblue;
+}
+
+.header a {
+    margin-bottom: 50px;
+    float: inline-end;
+    color: rgb(203, 255, 99);
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 15px;
+    border-radius: 4px;
+}
+
+
+.header a.active {
+    word-spacing: 1%;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.products {
+
+    padding: 80px 8%;
+
+}
+
+.products h2 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    margin-bottom: 60px;
+
+    color: #0f172a;
+
+}
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+    transition: .4s;
+
+    overflow: hidden;
+
+}
+
+.card:hover {
+
+    transform: translateY(-12px);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: contain;
+
+    transition: .5s;
+
+}
+
+.card:hover img {
+
+    transform: scale(1.1);
+
+}
+
+.card h3 {
+
+    margin: 15px 0;
+
+}
+
+.card p {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #00a8ff;
+
+    margin-bottom: 15px;
+
+}
+
+.card button {
+
+    padding: 12px 30px;
+
+    border: none;
+
+    background: #00a8ff;
+
+    color: white;
+
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.card button:hover {
+
+    background: #0f172a;
+
+}
+
+footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 40px;
+
+    padding: 60px 8%;
+
+}
+
+footer h3 {
+
+    color: white;
+
+    margin-bottom: 20px;
+
+}
+
+footer a {
+
+    display: block;
+
+    margin: 8px 0;
+
+    color: white;
+
+}
+
+footer i {
+
+    font-size: 22px;
+
+    margin-right: 15px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+footer i:hover {
+
+    color: #00a8ff;
+
+}
+
+
+@keyframes slideLeft {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(-100px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0);
+
+    }
+
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@media(max-width:900px) {
+
+    header {
+
+        padding: 20px;
+
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    nav {
+
+        margin: 20px 0;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero-text {
+
+        width: 100%;
+
+    }
+
+    .hero-image {
+
+        width: 90%;
+
+        margin-top: 40px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+    .
+}
