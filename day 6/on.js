@@ -1,5 +1,4 @@
 
-
 const productsContainer = document.getElementById("products");
 
 fetch("https://fakestoreapi.com/products")
